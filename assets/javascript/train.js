@@ -98,7 +98,7 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     console.log("UNIX epoch:", moment().format("X"));
     
 
-    $("#train-table > tbody").append("<tr><td>" + newName + "</td><td>" + newDestination + "</td><td>" + newFrequency + "</td><td>" + moment(tArrival).format("HH:mm") + "</td><td>" + tMinutes + "</td></tr>");
+    $("#train-table > tbody").append("<tr><td>" + newName + "</td><td>" + newDestination + "</td><td>" + newFrequency + "</td><td>" + moment(tArrival).format("LT") + "</td><td>" + tMinutes + "</td></tr>");
 });
 
 
